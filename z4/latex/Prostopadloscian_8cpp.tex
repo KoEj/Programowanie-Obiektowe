@@ -1,0 +1,137 @@
+\hypertarget{Prostopadloscian_8cpp}{}\section{src/\+Prostopadloscian.cpp File Reference}
+\label{Prostopadloscian_8cpp}\index{src/\+Prostopadloscian.\+cpp@{src/\+Prostopadloscian.\+cpp}}
+
+
+Plik zawiera dzialania na prostokacie.  
+
+
+{\ttfamily \#include \char`\"{}Prostopadloscian.\+hh\char`\"{}}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+Include dependency graph for Prostopadloscian.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{Prostopadloscian_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{Prostopadloscian_8cpp_a0a77f9bb1cc3f07e11031b947e6e7322}{operator$<$$<$} (std\+::ostream \&Strm, const \hyperlink{classProstopadloscian}{Prostopadloscian} \&Pr)
+\begin{DoxyCompactList}\small\item\em Przeciazenie operatora $<$$<$. \end{DoxyCompactList}\item 
+void \hyperlink{Prostopadloscian_8cpp_a1fd5a38f6b20a1ea903c1ec882222dd6}{Zapis\+Do\+Strumienia} (ostream \&Strm\+Wy, \hyperlink{classWektor}{Wektor3D} Przesuniecie, \hyperlink{classProstopadloscian}{Prostopadloscian} \&Pr)
+\begin{DoxyCompactList}\small\item\em Zapis danych do strumienia. \end{DoxyCompactList}\item 
+void \hyperlink{Prostopadloscian_8cpp_a42155017ae1f49acb330164b11df2b97}{Zapis\+Do\+Strumienia} (ostream \&Strm\+Wy, \hyperlink{classMacierz}{Macierz3x3} Przesuniecie, \hyperlink{classProstopadloscian}{Prostopadloscian} \&Pr)
+\begin{DoxyCompactList}\small\item\em Zapis danych do strumienia. \end{DoxyCompactList}\item 
+bool \hyperlink{Prostopadloscian_8cpp_a140b1afdfa25067b9e9fcd7a738af090}{Zapis\+Wspolrzednych\+Do\+Pliku} (const char $\ast$s\+Nazwa\+Pliku, \hyperlink{classWektor}{Wektor3D} Przesuniecie, \hyperlink{classProstopadloscian}{Prostopadloscian} \&Pr)
+\begin{DoxyCompactList}\small\item\em Zapis danych do pliku. \end{DoxyCompactList}\item 
+bool \hyperlink{Prostopadloscian_8cpp_a7b6b375f9857993a4457fc37f47d585d}{Zapis\+Wspolrzednych\+Do\+Pliku} (const char $\ast$s\+Nazwa\+Pliku, \hyperlink{classMacierz}{Macierz3x3} Przesuniecie, \hyperlink{classProstopadloscian}{Prostopadloscian} \&Pr)
+\begin{DoxyCompactList}\small\item\em Zapis danych do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Plik zawiera dzialania na prostokacie. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Prostopadloscian_8cpp_a0a77f9bb1cc3f07e11031b947e6e7322}\label{Prostopadloscian_8cpp_a0a77f9bb1cc3f07e11031b947e6e7322}} 
+\index{Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{Strm,  }\item[{const \hyperlink{classProstopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Przeciazenie operatora $<$$<$. 
+
+Przeciążenie operatora przesuniecia bitowego w lewo sluzy do przekazania strumienia danych na podane wyjscie. \mbox{\Hypertarget{Prostopadloscian_8cpp_a1fd5a38f6b20a1ea903c1ec882222dd6}\label{Prostopadloscian_8cpp_a1fd5a38f6b20a1ea903c1ec882222dd6}} 
+\index{Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}!Zapis\+Do\+Strumienia@{Zapis\+Do\+Strumienia}}
+\index{Zapis\+Do\+Strumienia@{Zapis\+Do\+Strumienia}!Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}}
+\subsubsection{\texorpdfstring{Zapis\+Do\+Strumienia()}{ZapisDoStrumienia()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Zapis\+Do\+Strumienia (\begin{DoxyParamCaption}\item[{ostream \&}]{Strm\+Wy,  }\item[{\hyperlink{classWektor}{Wektor3D}}]{Przesuniecie,  }\item[{\hyperlink{classProstopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Zapis danych do strumienia. 
+
+Zapis wspolrzednych zbioru punktow do strumienia wyjściowego. Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola to 16 miejsc, sposób wyrównywania -\/ do prawej strony. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Strm\+Wy} & -\/ strumien wyjsciowy, do ktorego maja zostac zapisane kolejne wspolrzedne. \\
+\hline
+\mbox{\tt in}  & {\em Przesuniecie} & -\/ ten parameter jest aby przekazac wektor przesuniecia \\
+\hline
+\mbox{\tt in}  & {\em \hyperlink{classProstopadloscian}{Prostopadloscian}} & -\/ ten parameter przekazuje oryginal obiektu bryly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Prostopadloscian_8cpp_a42155017ae1f49acb330164b11df2b97}\label{Prostopadloscian_8cpp_a42155017ae1f49acb330164b11df2b97}} 
+\index{Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}!Zapis\+Do\+Strumienia@{Zapis\+Do\+Strumienia}}
+\index{Zapis\+Do\+Strumienia@{Zapis\+Do\+Strumienia}!Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}}
+\subsubsection{\texorpdfstring{Zapis\+Do\+Strumienia()}{ZapisDoStrumienia()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Zapis\+Do\+Strumienia (\begin{DoxyParamCaption}\item[{ostream \&}]{Strm\+Wy,  }\item[{\hyperlink{classMacierz}{Macierz3x3}}]{Przesuniecie,  }\item[{\hyperlink{classProstopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Zapis danych do strumienia. 
+
+Zapis wspolrzednych zbioru punktow do strumienia wyjściowego. Dane sa odpowiednio sformatowane, tzn. przyjęto notację stałoprzecinkową z dokładnością do 10 miejsca po przecinku. Szerokość wyświetlanego pola to 16 miejsc, sposób wyrównywania -\/ do prawej strony. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Strm\+Wy} & -\/ strumien wyjsciowy, do ktorego maja zostac zapisane kolejne wspolrzedne. \\
+\hline
+\mbox{\tt in}  & {\em Przesuniecie} & -\/ ten parameter jest aby przekazac macierz obrotu \\
+\hline
+\mbox{\tt in}  & {\em \hyperlink{classProstopadloscian}{Prostopadloscian}} & -\/ ten parameter przekazuje oryginal obiektu bryly \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Prostopadloscian_8cpp_a140b1afdfa25067b9e9fcd7a738af090}\label{Prostopadloscian_8cpp_a140b1afdfa25067b9e9fcd7a738af090}} 
+\index{Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}!Zapis\+Wspolrzednych\+Do\+Pliku@{Zapis\+Wspolrzednych\+Do\+Pliku}}
+\index{Zapis\+Wspolrzednych\+Do\+Pliku@{Zapis\+Wspolrzednych\+Do\+Pliku}!Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}}
+\subsubsection{\texorpdfstring{Zapis\+Wspolrzednych\+Do\+Pliku()}{ZapisWspolrzednychDoPliku()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Zapis\+Wspolrzednych\+Do\+Pliku (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Nazwa\+Pliku,  }\item[{\hyperlink{classWektor}{Wektor3D}}]{Przesuniecie,  }\item[{\hyperlink{classProstopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Zapis danych do pliku. 
+
+Zapis wspolrzednych zbioru punktow do pliku, z ktorego dane odczyta program gnuplot i narysuje je w swoim oknie graficznym. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s\+Nazwa\+Pliku} & -\/ nazwa pliku, do którego zostana zapisane wspolrzędne punktów. \\
+\hline
+\mbox{\tt in}  & {\em Przesuniecie} & -\/ ten parameter jest aby przekazac wektor przesuniecia \\
+\hline
+\mbox{\tt in}  & {\em \hyperlink{classProstopadloscian}{Prostopadloscian}} & -\/ ten parameter przekazuje oryginal obiektu bryly \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ gdy operacja zapisu powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{Prostopadloscian_8cpp_a7b6b375f9857993a4457fc37f47d585d}\label{Prostopadloscian_8cpp_a7b6b375f9857993a4457fc37f47d585d}} 
+\index{Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}!Zapis\+Wspolrzednych\+Do\+Pliku@{Zapis\+Wspolrzednych\+Do\+Pliku}}
+\index{Zapis\+Wspolrzednych\+Do\+Pliku@{Zapis\+Wspolrzednych\+Do\+Pliku}!Prostopadloscian.\+cpp@{Prostopadloscian.\+cpp}}
+\subsubsection{\texorpdfstring{Zapis\+Wspolrzednych\+Do\+Pliku()}{ZapisWspolrzednychDoPliku()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Zapis\+Wspolrzednych\+Do\+Pliku (\begin{DoxyParamCaption}\item[{const char $\ast$}]{s\+Nazwa\+Pliku,  }\item[{\hyperlink{classMacierz}{Macierz3x3}}]{Przesuniecie,  }\item[{\hyperlink{classProstopadloscian}{Prostopadloscian} \&}]{Pr }\end{DoxyParamCaption})}
+
+
+
+Zapis danych do pliku. 
+
+Zapis wspolrzednych zbioru punktow do pliku, z ktorego dane odczyta program gnuplot i narysuje je w swoim oknie graficznym. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s\+Nazwa\+Pliku} & -\/ nazwa pliku, do którego zostana zapisane wspolrzędne punktów. \\
+\hline
+\mbox{\tt in}  & {\em Przesuniecie} & -\/ ten parameter jest aby przekazac macierz obrotu \\
+\hline
+\mbox{\tt in}  & {\em \hyperlink{classProstopadloscian}{Prostopadloscian}} & -\/ ten parameter przekazuje oryginal obiektu bryly \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em true} & -\/ gdy operacja zapisu powiodła się, \\
+\hline
+{\em false} & -\/ w przypadku przeciwnym. \\
+\hline
+\end{DoxyRetVals}

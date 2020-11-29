@@ -1,0 +1,52 @@
+\hypertarget{Macierz_8hh}{}\section{inc/\+Macierz.hh File Reference}
+\label{Macierz_8hh}\index{inc/\+Macierz.\+hh@{inc/\+Macierz.\+hh}}
+
+
+Ten plik zawiera definicję szablonu Macierz$<$$>$  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include \char`\"{}Wektor.\+hh\char`\"{}}\newline
+Include dependency graph for Macierz.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=221pt]{Macierz_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Macierz_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMacierz}{Macierz$<$ Wymiar $>$}
+\begin{DoxyCompactList}\small\item\em Szablon klasy macierz Szablon klasy macierz jest reprezentacja macierzy w przestrzeni n-\/ wymiarowej gdzie n jest reprezenowana przez argument szablonu wymiar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{Macierz_8hh_ac3a210e69b75f6e7fe48a36a48982ddc}\label{Macierz_8hh_ac3a210e69b75f6e7fe48a36a48982ddc}} 
+{\footnotesize template$<$int Wymiar$>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&Strm, const \hyperlink{classMacierz}{Macierz}$<$ Wymiar $>$ \&Mac)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ten plik zawiera definicję szablonu Macierz$<$$>$ 
+
+Przeciążenie operatora przesuniecia bitowego w lewo sluzy do przekazania strumienia danych na podane wyjscie.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Strm} & -\/ strumień wyjścia \\
+\hline
+\mbox{\tt in}  & {\em Mac} & -\/ macierz do wyświetlenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+strumień wyjścia 
+\end{DoxyReturn}

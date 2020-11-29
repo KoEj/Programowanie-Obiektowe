@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['_5finfoplikow',['_InfoPlikow',['../classPzG_1_1LaczeDoGNUPlota.html#a1916c5a6fecfb3554e9d5204b2f2086c',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fpokazos_5fox',['_PokazOs_OX',['../classPzG_1_1LaczeDoGNUPlota.html#a833aa8994b9913786f920ec8c259731f',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fpokazos_5foy',['_PokazOs_OY',['../classPzG_1_1LaczeDoGNUPlota.html#ae8d9b4dac5eae6ce86b7043c45b70ed8',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fpokazos_5foz',['_PokazOs_OZ',['../classPzG_1_1LaczeDoGNUPlota.html#a5b0afc06dc248790d2e7475b2162e309',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5ftrybrys',['_TrybRys',['../classPzG_1_1LaczeDoGNUPlota.html#a00e3a51bb47d3fb26eee875dc48215db',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fwejscie_5fgnuplota',['_Wejscie_GNUPlota',['../classPzG_1_1LaczeDoGNUPlota.html#adc3a2250216c2473a61da379da70b2d7',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fwyjscie_5fgnuplota',['_Wyjscie_GNUPlota',['../classPzG_1_1LaczeDoGNUPlota.html#a7d05a4767a35ee494d59724bb740dbc2',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fwyswietlajkomunikatyobledach',['_WyswietlajKomunikatyOBledach',['../classPzG_1_1LaczeDoGNUPlota.html#a2f2800f14ebfe1caef0b4d30c410a7fe',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fxmax',['_Xmax',['../classPzG_1_1LaczeDoGNUPlota.html#a847e00678a413ab076ccbcb7eba3ae58',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fxmin',['_Xmin',['../classPzG_1_1LaczeDoGNUPlota.html#a69d530edfe769e38448972e897456deb',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fxrotacja',['_Xrotacja',['../classPzG_1_1LaczeDoGNUPlota.html#a21e77f0a2bfb7fed989b6dc2d64b5a7e',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fxskala',['_Xskala',['../classPzG_1_1LaczeDoGNUPlota.html#a2c9303c4dbb4c9f0ddc4f1fe02eb3f70',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fymax',['_Ymax',['../classPzG_1_1LaczeDoGNUPlota.html#ad7dfd3fad82ea0720ec89eacc18410bf',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fymin',['_Ymin',['../classPzG_1_1LaczeDoGNUPlota.html#abc555fd6b82b0d5c9efb4802b58dc317',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fzmax',['_Zmax',['../classPzG_1_1LaczeDoGNUPlota.html#a26949eedd421832f0f206ce3c8f90694',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fzmin',['_Zmin',['../classPzG_1_1LaczeDoGNUPlota.html#a8f9797e881df35f4206cb7d8030e5edc',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fzrotacja',['_Zrotacja',['../classPzG_1_1LaczeDoGNUPlota.html#aa65781b1ff96dfb31a780e98ee28d6ed',1,'PzG::LaczeDoGNUPlota']]],
+  ['_5fzskala',['_Zskala',['../classPzG_1_1LaczeDoGNUPlota.html#a85446d06b2d714b2f852ef43c47c73c1',1,'PzG::LaczeDoGNUPlota']]]
+];

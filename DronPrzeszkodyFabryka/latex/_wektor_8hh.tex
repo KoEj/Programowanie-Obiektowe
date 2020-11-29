@@ -1,0 +1,46 @@
+\hypertarget{_wektor_8hh}{}\section{inc/\+Wektor.hh File Reference}
+\label{_wektor_8hh}\index{inc/Wektor.hh@{inc/Wektor.hh}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_wektor}{Wektor$<$ wymiar $>$}}
+\begin{DoxyCompactList}\small\item\em Klasa wektora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int wymiar$>$ }\\std\+::istream \& \mbox{\hyperlink{_wektor_8hh_abf2432e4e296349d9fc00d99d2d5afd4}{operator $>$$>$}} (std\+::istream \&stream, const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\begin{DoxyCompactList}\small\item\em Funkcja przeciazajaca wczytanie wektora. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int wymiar$>$ }\\std\+::ostream \& \mbox{\hyperlink{_wektor_8hh_a5e31ef6f7e06a11a2747548f8bd2b80e}{operator$<$$<$}} (std\+::ostream \&stream, const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\begin{DoxyCompactList}\small\item\em Funkcja przeciazajaca wypisanie wektora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Plik klasy \mbox{\hyperlink{class_wektor}{Wektor}} 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_wektor_8hh_abf2432e4e296349d9fc00d99d2d5afd4}\label{_wektor_8hh_abf2432e4e296349d9fc00d99d2d5afd4}} 
+\index{Wektor.hh@{Wektor.hh}!operator $>$$>$@{operator $>$$>$}}
+\index{operator $>$$>$@{operator $>$$>$}!Wektor.hh@{Wektor.hh}}
+\subsubsection{\texorpdfstring{operator $>$$>$()}{operator >>()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+std\+::istream\& operator $>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{stream,  }\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja przeciazajaca wczytanie wektora. 
+
+Argumenty\+: Strumien wejscia, wektor do wypisania. Zwraca\+: Strumien wejscia. \mbox{\Hypertarget{_wektor_8hh_a5e31ef6f7e06a11a2747548f8bd2b80e}\label{_wektor_8hh_a5e31ef6f7e06a11a2747548f8bd2b80e}} 
+\index{Wektor.hh@{Wektor.hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Wektor.hh@{Wektor.hh}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Funkcja przeciazajaca wypisanie wektora. 
+
+Argumenty\+: Strumien wyjscia, wektor do wprowadzenia. Zwraca\+: Strumien wyjsica. 

@@ -1,0 +1,85 @@
+\hypertarget{Wektor_8hh}{}\section{inc/\+Wektor.hh File Reference}
+\label{Wektor_8hh}\index{inc/\+Wektor.\+hh@{inc/\+Wektor.\+hh}}
+
+
+Ten plik zawiera definicję szablonu Wektor$<$$>$  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for Wektor.\+hh\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{Wektor_8hh__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Wektor_8hh__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classWektor}{Wektor$<$ Wymiar $>$}
+\begin{DoxyCompactList}\small\item\em Szablon klasy wektor Szablon klasy wektor jest reprezentacja wektoru w przestrzeni n-\/ wymiarowej gdzie n jest reprezenowana przez argument szablonu wymiar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$int Wymiar$>$ }\\std\+::istream \& \hyperlink{Wektor_8hh_a936d42e42728823fb375e5e2122c2fe0}{operator$>$$>$} (std\+::istream \&Strm, \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ \&Wek)
+\begin{DoxyCompactList}\small\item\em Przeciążenie operatora przesuniecia bitowego w prawo sluzy do przekazania strumienia danych na podane wejscie. \end{DoxyCompactList}\item 
+{\footnotesize template$<$int Wymiar$>$ }\\std\+::ostream \& \hyperlink{Wektor_8hh_a15a4e77c646218f10d5e34a3fd4a877a}{operator$<$$<$} (std\+::ostream \&Strm, const \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ \&Wek)
+\begin{DoxyCompactList}\small\item\em Przeciążenie operatora przesuniecia bitowego w lewo sluzy do przekazania strumienia danych na podane wyjscie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ten plik zawiera definicję szablonu Wektor$<$$>$ 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Wektor_8hh_a15a4e77c646218f10d5e34a3fd4a877a}\label{Wektor_8hh_a15a4e77c646218f10d5e34a3fd4a877a}} 
+\index{Wektor.\+hh@{Wektor.\+hh}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Wektor.\+hh@{Wektor.\+hh}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{Strm,  }\item[{const \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ \&}]{Wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przeciążenie operatora przesuniecia bitowego w lewo sluzy do przekazania strumienia danych na podane wyjscie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Strm} & -\/ strumień wyjścia \\
+\hline
+\mbox{\tt in}  & {\em Wek} & -\/ wektor do wyświetlenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+strumień wyjścia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Wektor_8hh_a936d42e42728823fb375e5e2122c2fe0}\label{Wektor_8hh_a936d42e42728823fb375e5e2122c2fe0}} 
+\index{Wektor.\+hh@{Wektor.\+hh}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Wektor.\+hh@{Wektor.\+hh}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+std\+::istream\& operator$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{Strm,  }\item[{\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ \&}]{Wek }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przeciążenie operatora przesuniecia bitowego w prawo sluzy do przekazania strumienia danych na podane wejscie. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em Strm} & -\/ strumień wejscia \\
+\hline
+\mbox{\tt in}  & {\em Wek} & -\/ wektor do wprowadzenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+strumień wejscia 
+\end{DoxyReturn}

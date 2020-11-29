@@ -1,0 +1,9 @@
+<map id="inc/Wektor.hh" name="inc/Wektor.hh">
+<area shape="rect" id="node2" href="$Macierz_8hh.html" title="Ten plik zawiera definicję szablonu Macierz&lt;&gt; " alt="" coords="165,80,271,107"/>
+<area shape="rect" id="node8" href="$Wektor3D_8hh.html" title="Klasa Wektor3D jest instancją szablonu Wektor&lt;3&gt; modeluje ona wektor o rozmiarze 3 co powoduje wygene..." alt="" coords="25,155,145,181"/>
+<area shape="rect" id="node3" href="$Macierz3x3_8hh.html" title="Klasa Macierz3x3 jest instancją szablonu Macierz&lt;3&gt; modeluje ona macierz o rozmiarze 3 co powoduje wy..." alt="" coords="169,155,297,181"/>
+<area shape="rect" id="node4" href="$Prostopadloscian_8hh.html" title="Ten plik zawiera definicję Klasy. " alt="" coords="33,229,195,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="5,304,103,331"/>
+<area shape="rect" id="node7" href="$Macierz3x3_8cpp.html" title="Plik Macierz3x3 Wylicza macierz obrotu rotacji dla nastepujacych osi x,y i z. " alt="" coords="270,229,406,256"/>
+<area shape="rect" id="node6" href="$Prostopadloscian_8cpp.html" title="Plik zawiera dzialania na prostokacie. " alt="" coords="127,304,296,331"/>
+</map>

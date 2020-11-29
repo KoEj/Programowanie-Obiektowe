@@ -1,0 +1,84 @@
+\hypertarget{class_macierz}{}\section{Macierz$<$ wymiar $>$ Class Template Reference}
+\label{class_macierz}\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+
+
+Szablon macierzy.  
+
+
+
+
+{\ttfamily \#include $<$Macierz.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_macierz_a536c8c19130df4b64467de2745bcdd4b}{operator()}} (int Ind, int Ind1) const
+\item 
+double \& \mbox{\hyperlink{class_macierz_a62fdb2bc9eeb1a119a89348e8954ca5e}{operator()}} (int Ind, int Ind1)
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \mbox{\hyperlink{class_macierz_a58be78b866f3a120b5c5bb654c8043b2}{operator $\ast$}} (const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor) const
+\item 
+\mbox{\hyperlink{class_macierz}{Macierz}} \mbox{\hyperlink{class_macierz_a68e53f895c6949465d318aef03b11803}{operator $\ast$}} (double D) const
+\item 
+\mbox{\hyperlink{class_macierz}{Macierz}} \mbox{\hyperlink{class_macierz_af7de2a2c8d9fd868fa41a530112baa4e}{operator $\ast$}} (\mbox{\hyperlink{class_macierz}{Macierz}} macierz) const
+\item 
+void \mbox{\hyperlink{class_macierz_ad07d660e3cb6f1fef0eed03ddc73123b}{zmien\+\_\+macierz}} (const char axis, const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&wektor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int wymiar$>$\newline
+class Macierz$<$ wymiar $>$}
+
+Szablon macierzy. 
+
+Szablon do tworzenia i operowania na macierzach kwadratowych dowolnej wielkosci 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_macierz_a58be78b866f3a120b5c5bb654c8043b2}\label{class_macierz_a58be78b866f3a120b5c5bb654c8043b2}} 
+\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor}}$<$wymiar$>$ \mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$\+::operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje mnozenie macierzy przez wektor. Argumenty\+: wektor -\/ wektor przez ktory mnozymy. Zwraca\+: \mbox{\hyperlink{class_wektor}{Wektor}} wynikowy. \mbox{\Hypertarget{class_macierz_a68e53f895c6949465d318aef03b11803}\label{class_macierz_a68e53f895c6949465d318aef03b11803}} 
+\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_macierz}{Macierz}} \mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$\+::operator $\ast$ (\begin{DoxyParamCaption}\item[{double}]{D }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje mnozenie macierzy przez skalar. Argumenty\+: D -\/ skalar przez ktory mnozym. Zwraca\+: \mbox{\hyperlink{class_macierz}{Macierz}} wynikowa. \mbox{\Hypertarget{class_macierz_af7de2a2c8d9fd868fa41a530112baa4e}\label{class_macierz_af7de2a2c8d9fd868fa41a530112baa4e}} 
+\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_macierz}{Macierz}} \mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$\+::operator $\ast$ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$}]{macierz }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje mnozenie macierzy przez inna macierz. Argumenty\+: macierz -\/ macierz przez ktora mnozymy. Zwraca\+: \mbox{\hyperlink{class_macierz}{Macierz}} wynikowa. \mbox{\Hypertarget{class_macierz_a536c8c19130df4b64467de2745bcdd4b}\label{class_macierz_a536c8c19130df4b64467de2745bcdd4b}} 
+\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+double \mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{Ind,  }\item[{int}]{Ind1 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przeciazenie nawiasow okraglych. Argumenty\+: Ind -\/ indeks, Ind -\/ indeks2, Ind -\/ indeks3. \mbox{\Hypertarget{class_macierz_a62fdb2bc9eeb1a119a89348e8954ca5e}\label{class_macierz_a62fdb2bc9eeb1a119a89348e8954ca5e}} 
+\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+double\& \mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{Ind,  }\item[{int}]{Ind1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przeciazenie nawiasow okraglych. Argumenty\+: Ind -\/ indeks, Ind -\/ indeks2, Ind -\/ indeks3. \mbox{\Hypertarget{class_macierz_ad07d660e3cb6f1fef0eed03ddc73123b}\label{class_macierz_ad07d660e3cb6f1fef0eed03ddc73123b}} 
+\index{Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}!zmien\_macierz@{zmien\_macierz}}
+\index{zmien\_macierz@{zmien\_macierz}!Macierz$<$ wymiar $>$@{Macierz$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{zmien\_macierz()}{zmien\_macierz()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+void \mbox{\hyperlink{class_macierz}{Macierz}}$<$ wymiar $>$\+::zmien\+\_\+macierz (\begin{DoxyParamCaption}\item[{const char}]{axis,  }\item[{const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&}]{wektor }\end{DoxyParamCaption})}
+
+Realizuje zmiane wartosci macierzy obrotu. Argumenty\+: axis -\/ os obrotu, angle -\/ kat obrotu w radianach. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{_macierz_8hh}{Macierz.\+hh}}\end{DoxyCompactItemize}

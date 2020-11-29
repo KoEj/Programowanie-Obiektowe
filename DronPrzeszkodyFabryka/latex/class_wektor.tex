@@ -1,0 +1,129 @@
+\hypertarget{class_wektor}{}\section{Wektor$<$ wymiar $>$ Class Template Reference}
+\label{class_wektor}\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+
+
+Klasa wektora.  
+
+
+
+
+{\ttfamily \#include $<$Wektor.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_wektor_afb0e52aea043f934d7edb02f6db26b39}\label{class_wektor_afb0e52aea043f934d7edb02f6db26b39}} 
+{\bfseries Wektor} (std\+::initializer\+\_\+list$<$ double $>$ inputs)
+\item 
+\mbox{\Hypertarget{class_wektor_ad6b3afbe95e12c1c9f839b254ba85246}\label{class_wektor_ad6b3afbe95e12c1c9f839b254ba85246}} 
+{\bfseries Wektor} (const \mbox{\hyperlink{class_wektor}{Wektor}} \&wektor1)
+\item 
+\mbox{\Hypertarget{class_wektor_a09e64e36a1443687efe6c8ca2487bd47}\label{class_wektor_a09e64e36a1443687efe6c8ca2487bd47}} 
+{\bfseries Wektor} (double Wspol\mbox{[}wymiar\mbox{]})
+\item 
+double \mbox{\hyperlink{class_wektor_aa7da735aa63205e853363b32dae520d7}{operator \mbox{[}$\,$\mbox{]}}} (int Ind) const
+\item 
+double \& \mbox{\hyperlink{class_wektor_aa37426fea8cdf38b5e38666ae10e6f76}{operator \mbox{[}$\,$\mbox{]}}} (int Ind)
+\item 
+double \mbox{\hyperlink{class_wektor_af1ce23d4a271c8d4c31efd2dab493169}{length}} (const \mbox{\hyperlink{class_wektor}{Wektor}} \&wektor)
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor}} \mbox{\hyperlink{class_wektor_a82858892953cabc911195dd99bd06950}{operator $\ast$}} (const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor}} \& \mbox{\hyperlink{class_wektor_acb74d69394c482fbcda11f58f1327a39}{operator=}} (const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\item 
+double \mbox{\hyperlink{class_wektor_a8050f7363a974eb96839b05c0613a97b}{operator \&}} (const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor}} \mbox{\hyperlink{class_wektor_a07889863a7d2fe1b8ffe883bc6c9534f}{operator -\/}} (const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\item 
+bool \mbox{\hyperlink{class_wektor_a01f7399a7fe76b11fcb76be76f06432a}{operator $>$}} (const double d)
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor}} \mbox{\hyperlink{class_wektor_a397fe70aad2b950bbf1509907bf21477}{operator+}} (const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&wektor)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_wektor_aca9e29488d49814e1368ecb60d6d0c35}\label{class_wektor_aca9e29488d49814e1368ecb60d6d0c35}} 
+static int {\bfseries ilosc} =0
+\item 
+\mbox{\Hypertarget{class_wektor_a77bebd6bbeaaba3b55a38674511075b5}\label{class_wektor_a77bebd6bbeaaba3b55a38674511075b5}} 
+static int {\bfseries calk\+\_\+ilosc} =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int wymiar$>$\newline
+class Wektor$<$ wymiar $>$}
+
+Klasa wektora. 
+
+Klasa zawiera narzedza niezbedne do dzialania wektorow. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_wektor_af1ce23d4a271c8d4c31efd2dab493169}\label{class_wektor_af1ce23d4a271c8d4c31efd2dab493169}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!length@{length}}
+\index{length@{length}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{length()}{length()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+double \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje liczenie dlugosci wektora. Argumenty\+: wektor1 -\/ wektor do zmierzenia. \mbox{\Hypertarget{class_wektor_a8050f7363a974eb96839b05c0613a97b}\label{class_wektor_a8050f7363a974eb96839b05c0613a97b}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator \&@{operator \&}}
+\index{operator \&@{operator \&}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator \&()}{operator \&()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+double \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator \& (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje mnozenie skalarne wektorw. Argumenty\+: wektor1 -\/ wektor przez ktory chcemy przemnozyc. Zwraca\+: wektor wynikowy. \mbox{\Hypertarget{class_wektor_a82858892953cabc911195dd99bd06950}\label{class_wektor_a82858892953cabc911195dd99bd06950}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor}} \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator $\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje mnozenie wektorowe wektorow. Argumenty\+: wektor1 -\/ wektor przez ktory chcemy przemnozyc. Zwraca\+: wektor wynikowy. \mbox{\Hypertarget{class_wektor_a07889863a7d2fe1b8ffe883bc6c9534f}\label{class_wektor_a07889863a7d2fe1b8ffe883bc6c9534f}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator -\/@{operator -\/}}
+\index{operator -\/@{operator -\/}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator -\/()}{operator -()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor}} \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator -\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje odejmowanie wektorow. Argumenty\+: wektor1 -\/ wektor ktory chcemy odjac. Zwraca\+: wektor wynikowy. \mbox{\Hypertarget{class_wektor_a01f7399a7fe76b11fcb76be76f06432a}\label{class_wektor_a01f7399a7fe76b11fcb76be76f06432a}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator $>$@{operator $>$}}
+\index{operator $>$@{operator $>$}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator $>$()}{operator >()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+bool \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator $>$ (\begin{DoxyParamCaption}\item[{const double}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje odejmowanie wektorow. Argumenty\+: wektor1 -\/ wektor ktory chcemy odjac. Zwraca\+: wektor wynikowy. \mbox{\Hypertarget{class_wektor_aa7da735aa63205e853363b32dae520d7}\label{class_wektor_aa7da735aa63205e853363b32dae520d7}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator \mbox{[}\mbox{]}@{operator []}}
+\index{operator \mbox{[}\mbox{]}@{operator []}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator []()}{operator []()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+double \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator \mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{Ind }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przeciazenie nawiasow kwadratowych. Argumenty\+: Ind -\/ indeks. \mbox{\Hypertarget{class_wektor_aa37426fea8cdf38b5e38666ae10e6f76}\label{class_wektor_aa37426fea8cdf38b5e38666ae10e6f76}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator \mbox{[}\mbox{]}@{operator []}}
+\index{operator \mbox{[}\mbox{]}@{operator []}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator []()}{operator []()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+double\& \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator \mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{Ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przeciazenie nawiasow kwadratowych. T\+O\+DO\+: A\+S\+S\+E\+R\+R\+T!!!!! Argumenty\+: Ind -\/ indeks. \mbox{\Hypertarget{class_wektor_a397fe70aad2b950bbf1509907bf21477}\label{class_wektor_a397fe70aad2b950bbf1509907bf21477}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor}} \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje dodawanie wektorow. Argumenty\+: wektor1 -\/ wektor ktory chcemy dodac. Zwraca\+: wektor wynikowy. \mbox{\Hypertarget{class_wektor_acb74d69394c482fbcda11f58f1327a39}\label{class_wektor_acb74d69394c482fbcda11f58f1327a39}} 
+\index{Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Wektor$<$ wymiar $>$@{Wektor$<$ wymiar $>$}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$int wymiar$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor}}\& \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor}}$<$ wymiar $>$ \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przypisanie wektorowe wektorow. Argumenty\+: wektor1 -\/ wektor przez ktory chcemy przypisac. Zwraca\+: wektor wynikowy. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{_wektor_8hh}{Wektor.\+hh}}\end{DoxyCompactItemize}

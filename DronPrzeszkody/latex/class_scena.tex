@@ -1,0 +1,74 @@
+\hypertarget{class_scena}{}\section{Scena Class Reference}
+\label{class_scena}\index{Scena@{Scena}}
+
+
+Klasa \mbox{\hyperlink{class_scena}{Scena}}.  
+
+
+
+
+{\ttfamily \#include $<$Scena.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scena_ad42e66ff066ebf2cee29a9ec22b83ec2}\label{class_scena_ad42e66ff066ebf2cee29a9ec22b83ec2}} 
+{\bfseries Scena} (\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} $\ast$gnuplot)
+\item 
+void \mbox{\hyperlink{class_scena_adaa6deabe2da0a2303100eb10ee1a44c}{dodaj\+\_\+przeszkode}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_przeszkoda}{Przeszkoda}} $>$ przeszkoda1)
+\item 
+void \mbox{\hyperlink{class_scena_a22103722367c966c09d29ecf32c047ce}{dodaj\+\_\+drona}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_dron}{Dron}} $>$ dron)
+\item 
+void \mbox{\hyperlink{class_scena_a6d75136075e1d0c562e77b8548b3e621}{usun\+\_\+obiekt}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$ obiekt)
+\item 
+void \mbox{\hyperlink{class_scena_a52ce6283ef4e38d47d4332230172b5eb}{zapis\+\_\+do\+\_\+pliku}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_scena_a5e4789117c6d95f061954a483a29d276}\label{class_scena_a5e4789117c6d95f061954a483a29d276}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_dron}{Dron}} $>$ $>$ {\bfseries Drony}
+\item 
+\mbox{\Hypertarget{class_scena_ac3ee85364cce227058a14d110f9c05af}\label{class_scena_ac3ee85364cce227058a14d110f9c05af}} 
+std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$ $>$ {\bfseries Obiekty}
+\item 
+\mbox{\Hypertarget{class_scena_ad4b371bf6235f24cf5bfacb3a90b9060}\label{class_scena_ad4b371bf6235f24cf5bfacb3a90b9060}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_dron}{Dron}} $>$ {\bfseries aktualny\+\_\+dron}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Klasa \mbox{\hyperlink{class_scena}{Scena}}. 
+
+Klasa zawiera narzedza niezbedne do dzialania sceny. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scena_a22103722367c966c09d29ecf32c047ce}\label{class_scena_a22103722367c966c09d29ecf32c047ce}} 
+\index{Scena@{Scena}!dodaj\_drona@{dodaj\_drona}}
+\index{dodaj\_drona@{dodaj\_drona}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{dodaj\_drona()}{dodaj\_drona()}}
+{\footnotesize\ttfamily void Scena\+::dodaj\+\_\+drona (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_dron}{Dron}} $>$}]{dron }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje dodawanie nowych dronow. Argumenty\+: drone -\/ nowy dron do dodania. \mbox{\Hypertarget{class_scena_adaa6deabe2da0a2303100eb10ee1a44c}\label{class_scena_adaa6deabe2da0a2303100eb10ee1a44c}} 
+\index{Scena@{Scena}!dodaj\_przeszkode@{dodaj\_przeszkode}}
+\index{dodaj\_przeszkode@{dodaj\_przeszkode}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{dodaj\_przeszkode()}{dodaj\_przeszkode()}}
+{\footnotesize\ttfamily void Scena\+::dodaj\+\_\+przeszkode (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_przeszkoda}{Przeszkoda}} $>$}]{przeszkoda1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje dodawanie nowych obiektow. Argumenty\+: przeszkoda1 -\/ nowy obiekt do dodania. \mbox{\Hypertarget{class_scena_a6d75136075e1d0c562e77b8548b3e621}\label{class_scena_a6d75136075e1d0c562e77b8548b3e621}} 
+\index{Scena@{Scena}!usun\_obiekt@{usun\_obiekt}}
+\index{usun\_obiekt@{usun\_obiekt}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{usun\_obiekt()}{usun\_obiekt()}}
+{\footnotesize\ttfamily void Scena\+::usun\+\_\+obiekt (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$}]{obiekt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje usuwanie obiektow. Argumenty\+: object -\/ obiekt do usunuiecie. \mbox{\Hypertarget{class_scena_a52ce6283ef4e38d47d4332230172b5eb}\label{class_scena_a52ce6283ef4e38d47d4332230172b5eb}} 
+\index{Scena@{Scena}!zapis\_do\_pliku@{zapis\_do\_pliku}}
+\index{zapis\_do\_pliku@{zapis\_do\_pliku}!Scena@{Scena}}
+\subsubsection{\texorpdfstring{zapis\_do\_pliku()}{zapis\_do\_pliku()}}
+{\footnotesize\ttfamily void Scena\+::zapis\+\_\+do\+\_\+pliku (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje zapisywanie obiektow do pliku. Argumenty\+: Obiekty -\/ obiekt do zapisania. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{_scena_8hh}{Scena.\+hh}}\end{DoxyCompactItemize}

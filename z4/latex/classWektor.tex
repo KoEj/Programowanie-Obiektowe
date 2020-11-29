@@ -1,0 +1,140 @@
+\hypertarget{classWektor}{}\section{Wektor$<$ Wymiar $>$ Class Template Reference}
+\label{classWektor}\index{Wektor$<$ Wymiar $>$@{Wektor$<$ Wymiar $>$}}
+
+
+Szablon klasy wektor Szablon klasy wektor jest reprezentacja wektoru w przestrzeni n-\/ wymiarowej gdzie n jest reprezenowana przez argument szablonu wymiar.  
+
+
+
+
+{\ttfamily \#include $<$Wektor.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \& \hyperlink{classWektor_a2dc8e9f75d86af3858121c5a99d0def5}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Przeciązenie nawiasów indeksowania przez to przeciazenie zostaje zwrocony oryginal elementu wektora. \end{DoxyCompactList}\item 
+double \hyperlink{classWektor_a3db64cabd91749fd305e9c875804abda}{operator\mbox{[}$\,$\mbox{]}} (int i) const
+\begin{DoxyCompactList}\small\item\em Przeciązenie nawiasów indeksowania przez to przeciazenie zostaje zwrocona stala wartosc elementu wektora. \end{DoxyCompactList}\item 
+\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ \hyperlink{classWektor_a36c8df810f47db5b99a57654530c8171}{operator-\/} (\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ arg)
+\begin{DoxyCompactList}\small\item\em przeciazenie wektor odejmowania \end{DoxyCompactList}\item 
+\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ \hyperlink{classWektor_a207e99f62caf9dd33439bc50545a9c23}{operator+} (\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ arg)
+\begin{DoxyCompactList}\small\item\em przeciazenie wektor dodawania \end{DoxyCompactList}\item 
+double \hyperlink{classWektor_a74d55a6b59308fe4501e0159cf2dbc17}{Dlugosc\+Wektora} (\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$ arg)
+\begin{DoxyCompactList}\small\item\em Oblicza długość wektora. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int Wymiar$>$\newline
+class Wektor$<$ Wymiar $>$}
+
+Szablon klasy wektor Szablon klasy wektor jest reprezentacja wektoru w przestrzeni n-\/ wymiarowej gdzie n jest reprezenowana przez argument szablonu wymiar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wymiar} & -\/ wartość calkowita przyjmujaca wymiar wektoru \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWektor_a74d55a6b59308fe4501e0159cf2dbc17}\label{classWektor_a74d55a6b59308fe4501e0159cf2dbc17}} 
+\index{Wektor@{Wektor}!Dlugosc\+Wektora@{Dlugosc\+Wektora}}
+\index{Dlugosc\+Wektora@{Dlugosc\+Wektora}!Wektor@{Wektor}}
+\subsubsection{\texorpdfstring{Dlugosc\+Wektora()}{DlugoscWektora()}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+double \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$\+::Dlugosc\+Wektora (\begin{DoxyParamCaption}\item[{\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Oblicza długość wektora. 
+
+liczy ona długość wektora, czyli odleglosc pomiedzy dwoma punktami w przestrzeni uzywa do tego algorytmu z zainicjowanymi funkcjami z biblioteki cmath 
+\begin{DoxyParams}{Parameters}
+{\em arg} & -\/ jeden z punktow dlugosci miedzy wektorami \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+suma -\/ zwraca odleglosc pomiedzy dwoma wektorami 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWektor_a207e99f62caf9dd33439bc50545a9c23}\label{classWektor_a207e99f62caf9dd33439bc50545a9c23}} 
+\index{Wektor@{Wektor}!operator+@{operator+}}
+\index{operator+@{operator+}!Wektor@{Wektor}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+\hyperlink{classWektor}{Wektor}$<$Wymiar$>$ \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+przeciazenie wektor dodawania 
+
+dodaje do siebie dwa wektory 
+\begin{DoxyParams}{Parameters}
+{\em arg} & -\/ wartosc parametru z prawej strony operatora + \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wynik -\/ zwraca sume dwoch wektorow 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWektor_a36c8df810f47db5b99a57654530c8171}\label{classWektor_a36c8df810f47db5b99a57654530c8171}} 
+\index{Wektor@{Wektor}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Wektor@{Wektor}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+\hyperlink{classWektor}{Wektor}$<$Wymiar$>$ \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classWektor}{Wektor}$<$ Wymiar $>$}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+przeciazenie wektor odejmowania 
+
+odejmuje do siebie dwa wektory 
+\begin{DoxyParams}{Parameters}
+{\em arg} & -\/ wartosc parametru z prawej strony operatora + \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+wynik -\/ zwraca roznice dwoch wektorow 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWektor_a2dc8e9f75d86af3858121c5a99d0def5}\label{classWektor_a2dc8e9f75d86af3858121c5a99d0def5}} 
+\index{Wektor@{Wektor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wektor@{Wektor}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+double\& \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przeciązenie nawiasów indeksowania przez to przeciazenie zostaje zwrocony oryginal elementu wektora. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & -\/przyjmuje ideks elementu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wartosc elementu wektora typu double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWektor_a3db64cabd91749fd305e9c875804abda}\label{classWektor_a3db64cabd91749fd305e9c875804abda}} 
+\index{Wektor@{Wektor}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Wektor@{Wektor}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int Wymiar$>$ \\
+double \hyperlink{classWektor}{Wektor}$<$ Wymiar $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Przeciązenie nawiasów indeksowania przez to przeciazenie zostaje zwrocona stala wartosc elementu wektora. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em i} & -\/przyjmuje ideks elementu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+zwraca wartosc elementu wektora typu double 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{Wektor_8hh}{Wektor.\+hh}\end{DoxyCompactItemize}

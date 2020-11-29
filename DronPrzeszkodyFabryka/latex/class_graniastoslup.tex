@@ -1,0 +1,99 @@
+\hypertarget{class_graniastoslup}{}\section{Graniastoslup$<$ N $>$ Class Template Reference}
+\label{class_graniastoslup}\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+
+
+Klasa wielokata.  
+
+
+
+
+{\ttfamily \#include $<$Graniastoslup.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor3D}} \mbox{\hyperlink{class_graniastoslup_a239b423d347cc3de286b805b564997b2}{operator \mbox{[}$\,$\mbox{]}}} (int Ind) const
+\item 
+\mbox{\hyperlink{class_wektor}{Wektor3D}} \& \mbox{\hyperlink{class_graniastoslup_a418130dab87451971818f266d45794a4}{operator \mbox{[}$\,$\mbox{]}}} (int Ind)
+\item 
+void \mbox{\hyperlink{class_graniastoslup_a04c0502602c08af631400dac59c341c6}{przesuniecie}} (const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&wektor)
+\item 
+void \mbox{\hyperlink{class_graniastoslup_a701f6fe18e914843ed32e7ea9dd9e433}{rotacja}} (const \mbox{\hyperlink{class_macierz}{Macierz3x3}} macierz\+\_\+rotacji)
+\item 
+void \mbox{\hyperlink{class_graniastoslup_a875091773ddc3f77f03d44829ce211e6}{pokaz\+\_\+wspol}} ()
+\item 
+\mbox{\Hypertarget{class_graniastoslup_a86e09003fa136641499279364d3a7c30}\label{class_graniastoslup_a86e09003fa136641499279364d3a7c30}} 
+void {\bfseries zapis\+\_\+do\+\_\+pliku} (std\+::string nazwa\+\_\+pliku)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_graniastoslup_aa05502340b49149272b3750228a45cc5}\label{class_graniastoslup_aa05502340b49149272b3750228a45cc5}} 
+std\+::vector$<$ \mbox{\hyperlink{class_wektor}{Wektor3D}} $>$ {\bfseries wspol}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{class_graniastoslup_a16f3e79ecd1cf7191844403324ddc5cb}{operator$<$$<$}} (std\+::ostream \&stream, const \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}} \&graniastoslup)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$int N$>$\newline
+class Graniastoslup$<$ N $>$}
+
+Klasa wielokata. 
+
+Klasa dla wielokota. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_graniastoslup_a239b423d347cc3de286b805b564997b2}\label{class_graniastoslup_a239b423d347cc3de286b805b564997b2}} 
+\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}!operator \mbox{[}\mbox{]}@{operator []}}
+\index{operator \mbox{[}\mbox{]}@{operator []}!Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+\subsubsection{\texorpdfstring{operator []()}{operator []()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor3D}} \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}}$<$ N $>$\+::operator \mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{Ind }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przeciazenie nawiasow kwadratowych. Argumenty\+: Ind -\/ indeks. \mbox{\Hypertarget{class_graniastoslup_a418130dab87451971818f266d45794a4}\label{class_graniastoslup_a418130dab87451971818f266d45794a4}} 
+\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}!operator \mbox{[}\mbox{]}@{operator []}}
+\index{operator \mbox{[}\mbox{]}@{operator []}!Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+\subsubsection{\texorpdfstring{operator []()}{operator []()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+\mbox{\hyperlink{class_wektor}{Wektor3D}}\& \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}}$<$ N $>$\+::operator \mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{Ind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przeciazenie nawiasow kwadratowych. Argumenty\+: Ind -\/ indeks. \mbox{\Hypertarget{class_graniastoslup_a875091773ddc3f77f03d44829ce211e6}\label{class_graniastoslup_a875091773ddc3f77f03d44829ce211e6}} 
+\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}!pokaz\_wspol@{pokaz\_wspol}}
+\index{pokaz\_wspol@{pokaz\_wspol}!Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+\subsubsection{\texorpdfstring{pokaz\_wspol()}{pokaz\_wspol()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+void \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}}$<$ N $>$\+::pokaz\+\_\+wspol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Wypisuje informacje o wierzcholkach bokow. \mbox{\Hypertarget{class_graniastoslup_a04c0502602c08af631400dac59c341c6}\label{class_graniastoslup_a04c0502602c08af631400dac59c341c6}} 
+\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}!przesuniecie@{przesuniecie}}
+\index{przesuniecie@{przesuniecie}!Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+\subsubsection{\texorpdfstring{przesuniecie()}{przesuniecie()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+void \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}}$<$ N $>$\+::przesuniecie (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&}]{wektor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przesuniecie wierzcholkow. Argumenty\+: vector -\/ wektor przesuniecia. \mbox{\Hypertarget{class_graniastoslup_a701f6fe18e914843ed32e7ea9dd9e433}\label{class_graniastoslup_a701f6fe18e914843ed32e7ea9dd9e433}} 
+\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}!rotacja@{rotacja}}
+\index{rotacja@{rotacja}!Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+\subsubsection{\texorpdfstring{rotacja()}{rotacja()}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+void \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}}$<$ N $>$\+::rotacja (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_macierz}{Macierz3x3}}}]{macierz\+\_\+rotacji }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje jednokrotny obrot wierzcholkow o zadany kat wokol osi. Argumenty\+: angle -\/ kat obrotu. 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_graniastoslup_a16f3e79ecd1cf7191844403324ddc5cb}\label{class_graniastoslup_a16f3e79ecd1cf7191844403324ddc5cb}} 
+\index{Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Graniastoslup$<$ N $>$@{Graniastoslup$<$ N $>$}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily template$<$int N$>$ \\
+std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{stream,  }\item[{const \mbox{\hyperlink{class_graniastoslup}{Graniastoslup}}$<$ N $>$ \&}]{graniastoslup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+Realizuje wypisanie czworoscianu. Argumenty\+: stream -\/ strumien wyjsica, cuboid -\/ obiekt do wypisania. Zwraca\+: Strumien wyjscia. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{_graniastoslup_8hh}{Graniastoslup.\+hh}}\end{DoxyCompactItemize}

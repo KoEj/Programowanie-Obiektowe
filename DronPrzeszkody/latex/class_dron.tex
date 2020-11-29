@@ -1,0 +1,107 @@
+\hypertarget{class_dron}{}\section{Dron Class Reference}
+\label{class_dron}\index{Dron@{Dron}}
+
+
+Klasa drona.  
+
+
+
+
+{\ttfamily \#include $<$Dron.\+hh$>$}
+
+Inheritance diagram for Dron\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dron}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dron_aa47a4c2d0fe914360b73a38b381765e4}\label{class_dron_aa47a4c2d0fe914360b73a38b381765e4}} 
+{\bfseries Dron} (const std\+::string \&name, const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&pozycja, const int width=24, const int height=20, const int long=20)
+\item 
+void \mbox{\hyperlink{class_dron_a0ea228f96898dc3b6faa6849636333f3}{rotacja}} (const double \&kat, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} Lacze)
+\item 
+void \mbox{\hyperlink{class_dron_a9c676445fe100adedc65c65ea2f98866}{do\+\_\+przodu}} (const double \&buffor\+\_\+drogi, const double \&kat\+\_\+wznoszenia, std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$$>$ \&Obiekty, \mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}} Lacze)
+\item 
+void \mbox{\hyperlink{class_dron_adccff890ab21226c99d3707ca5070d40}{przesuniecie}} (const double \&azymut, const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&droga, const int predkosc\+\_\+wirnikow\mbox{[}4\mbox{]})
+\item 
+void \mbox{\hyperlink{class_dron_ae393be8215912f95339b3bb0c586c8cf}{wrinik\+\_\+obrot}} ()
+\item 
+\mbox{\Hypertarget{class_dron_a69d1b5048e1c503928fbe774d043d8fa}\label{class_dron_a69d1b5048e1c503928fbe774d043d8fa}} 
+virtual void {\bfseries zapis\+\_\+do\+\_\+pliku} ()
+\item 
+virtual bool \mbox{\hyperlink{class_dron_a4cfd8ccac2031912be001b445e91e7e5}{kolizja}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$ obiekt)
+\item 
+double \mbox{\hyperlink{class_dron_a0e17db391f41adf89bd72e6b78e35d39}{wez\+\_\+kat}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dron_a4a989f34daeab01e3d8dbca7ad5122d1}\label{class_dron_a4a989f34daeab01e3d8dbca7ad5122d1}} 
+\mbox{\hyperlink{class_korpus}{Korpus}} {\bfseries korpus}
+\item 
+\mbox{\Hypertarget{class_dron_a7ae96f5085b1ea76537d0a5c9d3adf62}\label{class_dron_a7ae96f5085b1ea76537d0a5c9d3adf62}} 
+\mbox{\hyperlink{class_wirnik}{Wirnik}} {\bfseries wirnik} \mbox{[}4\mbox{]}
+\item 
+\mbox{\Hypertarget{class_dron_af92cb586efd46bb3b13463386900342d}\label{class_dron_af92cb586efd46bb3b13463386900342d}} 
+int {\bfseries drone\+\_\+speed} =10
+\item 
+\mbox{\Hypertarget{class_dron_a576353aecbb461025976352cae99133c}\label{class_dron_a576353aecbb461025976352cae99133c}} 
+int {\bfseries predkosc\+\_\+wirnika} =100
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Klasa drona. 
+
+Klasa zawiera narzedza niezbedne do dzialania drona. Skalda sie z 4 rotorow i ciala drona. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dron_a9c676445fe100adedc65c65ea2f98866}\label{class_dron_a9c676445fe100adedc65c65ea2f98866}} 
+\index{Dron@{Dron}!do\_przodu@{do\_przodu}}
+\index{do\_przodu@{do\_przodu}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{do\_przodu()}{do\_przodu()}}
+{\footnotesize\ttfamily void Dron\+::do\+\_\+przodu (\begin{DoxyParamCaption}\item[{const double \&}]{buffor\+\_\+drogi,  }\item[{const double \&}]{kat\+\_\+wznoszenia,  }\item[{std\+::list$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$$>$ \&}]{Obiekty,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}}}]{Lacze }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przemieszczenie sie drona o zadany wektor. Posiada animacje. Argumenty\+: buffor\+\_\+road -\/ trasa do przebycia. azymuth -\/ aktualny azymut drona. rise\+\_\+angle -\/ kat lotu. link -\/ link do G\+N\+U\+Plota. road -\/ aktualne polozenie drona. rotor\+\_\+speed -\/ predkosc obrotu rotorow przy wykonywaniu manewru. drone\+\_\+speed -\/ predkosc poruszania sie drona. \mbox{\Hypertarget{class_dron_a4cfd8ccac2031912be001b445e91e7e5}\label{class_dron_a4cfd8ccac2031912be001b445e91e7e5}} 
+\index{Dron@{Dron}!kolizja@{kolizja}}
+\index{kolizja@{kolizja}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{kolizja()}{kolizja()}}
+{\footnotesize\ttfamily virtual bool Dron\+::kolizja (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}} $>$}]{obiekt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sprawdza czy obiekty sie zderzaja. Argumenty\+: shared\+\_\+ptr$<$\+Scene\+\_\+object$>$ object -\/ lista obiektow. 
+
+Implements \mbox{\hyperlink{class_obiekt__sceny}{Obiekt\+\_\+sceny}}.
+
+\mbox{\Hypertarget{class_dron_adccff890ab21226c99d3707ca5070d40}\label{class_dron_adccff890ab21226c99d3707ca5070d40}} 
+\index{Dron@{Dron}!przesuniecie@{przesuniecie}}
+\index{przesuniecie@{przesuniecie}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{przesuniecie()}{przesuniecie()}}
+{\footnotesize\ttfamily void Dron\+::przesuniecie (\begin{DoxyParamCaption}\item[{const double \&}]{azymut,  }\item[{const \mbox{\hyperlink{class_wektor}{Wektor3D}} \&}]{droga,  }\item[{const int}]{predkosc\+\_\+wirnikow\mbox{[}4\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przemieszczenie sie drona do punktu startu i wykonuje na nim niezbedne transformacje. Argumenty\+: azymuth -\/ aktualny azymut drona. road -\/ aktualne polozenie drona. rotors\+\_\+speed -\/ predkosc obrotu rotorow przy wykonywaniu manewru. \mbox{\Hypertarget{class_dron_a0ea228f96898dc3b6faa6849636333f3}\label{class_dron_a0ea228f96898dc3b6faa6849636333f3}} 
+\index{Dron@{Dron}!rotacja@{rotacja}}
+\index{rotacja@{rotacja}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{rotacja()}{rotacja()}}
+{\footnotesize\ttfamily void Dron\+::rotacja (\begin{DoxyParamCaption}\item[{const double \&}]{kat,  }\item[{\mbox{\hyperlink{class_pz_g_1_1_lacze_do_g_n_u_plota}{Pz\+G\+::\+Lacze\+Do\+G\+N\+U\+Plota}}}]{Lacze }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje obrot drona o zadany kat wokol osi drona. Posiada animacje. Argumenty\+: angle -\/ kat obrotu. azymuth -\/ aktualny azymut drona. link -\/ link do G\+N\+U\+Plota. road -\/ aktualne polozenie drona. rotor\+\_\+speed -\/ predkosc obrotu rotorow przy wykonywaniu manewru. \mbox{\Hypertarget{class_dron_a0e17db391f41adf89bd72e6b78e35d39}\label{class_dron_a0e17db391f41adf89bd72e6b78e35d39}} 
+\index{Dron@{Dron}!wez\_kat@{wez\_kat}}
+\index{wez\_kat@{wez\_kat}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{wez\_kat()}{wez\_kat()}}
+{\footnotesize\ttfamily double Dron\+::wez\+\_\+kat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje liczenie promienia drona. \mbox{\Hypertarget{class_dron_ae393be8215912f95339b3bb0c586c8cf}\label{class_dron_ae393be8215912f95339b3bb0c586c8cf}} 
+\index{Dron@{Dron}!wrinik\_obrot@{wrinik\_obrot}}
+\index{wrinik\_obrot@{wrinik\_obrot}!Dron@{Dron}}
+\subsubsection{\texorpdfstring{wrinik\_obrot()}{wrinik\_obrot()}}
+{\footnotesize\ttfamily void Dron\+::wrinik\+\_\+obrot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizuje przemieszczenie sie rotorow. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/\mbox{\hyperlink{_dron_8hh}{Dron.\+hh}}\end{DoxyCompactItemize}
